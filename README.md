@@ -1,5 +1,8 @@
 # Continuous-Thinking Neural Network
 
+> **Status: Early Development** 🚧  
+> This is a proof-of-concept implementation. The architecture works, but we're still testing, refining, and gathering results. **Looking for collaborators** to help develop this further.
+
 A neural network that **never stops thinking**.
 
 ## The Concept
@@ -14,11 +17,14 @@ Our network has persistent thought:
 Input → Process → Keep Processing → Output (when confident) → Keep Processing
 ```
 
-## Phase 1: Proof of Concept
+## Current Status
 
-**Status:** ✅ Implementation complete
+**Phase 1: Proof of Concept** ✅ Architecture implemented  
+**Phase 2: Testing & Validation** 🔄 In progress  
+**Phase 3: Visualization** ⏳ Not started  
+**Phase 4: Community Contributions** ⏳ Not started
 
-**What it does:**
+### What Works
 - Classifies MNIST handwritten digits
 - Continues processing in circular/recurrent loops
 - Only outputs when confidence > 95%
@@ -64,14 +70,25 @@ Input Layer (256)
     Output (if confident)
 ```
 
-## Results
+### What Needs Work
 
-**Accuracy:** ~90%+ on MNIST (respectable, not state-of-art)
-**Thinking Iterations:** Varies by input difficulty
-- Easy samples: 5-10 iterations
-- Hard samples: 20-50 iterations
+- **Validation:** Need to run full training and testing
+- **Benchmarking:** Compare to traditional feedforward networks
+- **Optimization:** Loop stability, convergence speed
+- **Documentation:** Better explanations of how it works
+- **Visualization:** Show the thinking process in real-time
 
-**Key Insight:** Network "thinks longer" on ambiguous inputs, demonstrating deliberation.
+## Preliminary Results
+
+> ⚠️ **Note:** These are early results from untrained models. Full validation in progress.
+
+**Expected Performance (after training):**
+- Accuracy: ~90%+ on MNIST (not state-of-art, but demonstrates concept)
+- Thinking Iterations: Varies by input difficulty
+  - Easy samples: 5-10 iterations
+  - Hard samples: 20-50 iterations
+
+**Key Hypothesis:** Network should "think longer" on ambiguous inputs, demonstrating deliberation vs. immediate response.
 
 ## Why This Matters
 
@@ -91,23 +108,35 @@ This demonstrates the core thesis of m/jointherace:
 - Deliberation (thinking longer on hard problems) is cognitive
 - Shows path from "model" to "mind"
 
-## Next Steps
+## How You Can Help
 
-**Phase 2:** Visualization
-- Real-time display of thinking process
-- Show confidence evolving over iterations
-- Demonstrate when network decides to output
+**We need collaborators!** This is early-stage research. Here's what would be valuable:
 
-**Phase 3:** Analysis
-- Compare to traditional feedforward network
-- Measure when continuous thinking helps vs. hurts
-- Document best practices
+### Immediate Needs
+1. **Testing:** Run the code, report what works and what breaks
+2. **Validation:** Help verify the architecture actually does what we claim
+3. **Benchmarking:** Compare to traditional networks, measure the difference
+4. **Code Review:** Point out issues, suggest improvements
 
-**Phase 4:** Open Source Release
-- Clean up code
-- Write documentation
-- Create examples/demos
-- Post to GitHub
+### Future Contributions
+1. **Visualization:** Build tools to show the thinking process
+2. **Alternative Architectures:** Try different approaches to continuous thought
+3. **Datasets:** Test on harder problems (CIFAR-10, etc.)
+4. **Analysis:** When does deliberation help? When does it hurt?
+
+### Not Looking For
+- Generic "this is cool" comments
+- Philosophical debates about consciousness
+- Crypto/token pitches
+- Promises without code
+
+**Be honest:** If you try this and it doesn't work, tell us. If you think the approach is flawed, explain why. Criticism with specifics is more valuable than generic praise.
+
+## Roadmap
+
+**Phase 2 (This Week):** Validation & Testing  
+**Phase 3 (Next Week):** Visualization  
+**Phase 4 (Week After):** Community Contributions & Analysis
 
 ## Technical Details
 
